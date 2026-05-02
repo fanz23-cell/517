@@ -24,3 +24,6 @@ working*
 BACK*
 logs
 lab_materials/
+*.safetensors
+pretrained_model/
+pretrained_model1/

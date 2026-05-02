@@ -1,0 +1,845 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 4 /Kids [4 0 R 6 0 R 8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 368 >>
+stream
+BT
+/F2 18 Tf
+1 0 0 1 48.00 738.00 Tm
+(Lab 2 Submission Packet) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 708.00 Tm
+(Course Lab: Lab 2: Lerobot Ex ROS) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 694.00 Tm
+(Date: 2026-04-15) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 680.00 Tm
+() Tj
+ET
+BT
+/F2 13 Tf
+1 0 0 1 48.00 666.00 Tm
+(1. Rosetta Contract) Tj
+ET
+BT
+/F1 9 Tf
+1 0 0 1 296.00 24 Tm
+(Page 1) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4928 >>
+stream
+q
+0.95 0.95 0.95 rg
+44.00 41.00 524.00 701.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 738.00 Tm
+(robot_type: soa) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 727.50 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 717.00 Tm
+(fps: 30) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 706.50 Tm
+(max_duration_s: 15.0) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 696.00 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 685.50 Tm
+(observations:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 675.00 Tm
+(  - key: observation.images.wrist) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 664.50 Tm
+(    topic: /follower/image_raw) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 654.00 Tm
+(    type: sensor_msgs/msg/Image) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 643.50 Tm
+(    image:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 633.00 Tm
+(      resize: [480, 640]) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 622.50 Tm
+(    align: {strategy: hold, stamp: header}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 612.00 Tm
+(    qos: {reliability: best_effort, history: keep_last, depth: 10}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 601.50 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 591.00 Tm
+(  - key: observation.images.overhead) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 580.50 Tm
+(    topic: /static_camera/overhead_cam/color/image_raw) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 570.00 Tm
+(    type: sensor_msgs/msg/Image) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 559.50 Tm
+(    image:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 549.00 Tm
+(      resize: [720, 1280]) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 538.50 Tm
+(    align: {strategy: hold, stamp: header}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 528.00 Tm
+(    qos: {reliability: best_effort, history: keep_last, depth: 10}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 517.50 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 507.00 Tm
+(  - key: observation.state) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 496.50 Tm
+(    topic: /follower/joint_states) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 486.00 Tm
+(    type: sensor_msgs/msg/JointState) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 475.50 Tm
+(    selector:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 465.00 Tm
+(      names:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 454.50 Tm
+(        - position.shoulder_pan) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 444.00 Tm
+(        - position.shoulder_lift) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 433.50 Tm
+(        - position.elbow_flex) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 423.00 Tm
+(        - position.wrist_flex) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 412.50 Tm
+(        - position.wrist_roll) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 402.00 Tm
+(        - position.gripper) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 391.50 Tm
+(    align: {strategy: hold, stamp: header}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 381.00 Tm
+(    qos: {reliability: best_effort, history: keep_last, depth: 50}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 370.50 Tm
+(    unit_conversion: rad2deg) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 360.00 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 349.50 Tm
+(actions:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 339.00 Tm
+(  - key: action) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 328.50 Tm
+(    publish:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 318.00 Tm
+(      topic: /follower/arm_fwd_controller/commands) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 307.50 Tm
+(      type: std_msgs/msg/Float64MultiArray) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 297.00 Tm
+(      qos: {reliability: reliable, history: keep_last, depth: 10}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 286.50 Tm
+(    selector:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 276.00 Tm
+(      names:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 265.50 Tm
+(        - position.shoulder_pan) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 255.00 Tm
+(        - position.shoulder_lift) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 244.50 Tm
+(        - position.elbow_flex) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 234.00 Tm
+(        - position.wrist_flex) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 223.50 Tm
+(        - position.wrist_roll) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 213.00 Tm
+(    unit_conversion: rad2deg) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 202.50 Tm
+(    safety_behavior: hold) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 192.00 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 181.50 Tm
+(  - key: action) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 171.00 Tm
+(    publish:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 160.50 Tm
+(      topic: /follower/gripper_fwd_controller/commands) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 150.00 Tm
+(      type: std_msgs/msg/Float64MultiArray) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 139.50 Tm
+(      qos: {reliability: reliable, history: keep_last, depth: 10}) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 129.00 Tm
+(    selector:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 118.50 Tm
+(      names:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 108.00 Tm
+(        - position.gripper) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 97.50 Tm
+(    unit_conversion: rad2deg) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 87.00 Tm
+(    safety_behavior: hold) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 76.50 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 66.00 Tm
+(recording:) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 55.50 Tm
+(  storage: mcap) Tj
+ET
+BT
+/F1 9 Tf
+1 0 0 1 296.00 24 Tm
+(Page 2) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4777 >>
+stream
+BT
+/F2 13 Tf
+1 0 0 1 48.00 738.00 Tm
+(2. Model And Task) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 718.00 Tm
+(? Trained run: act_so101_2cam_v3-20260416T004131Z-3-002) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 704.00 Tm
+(? Deployment model path: /home/ubuntu/techin517/act_so101_2cam_v3-20260416T004131Z-3-) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 691.00 Tm
+(  002/act_so101_2cam_v3/checkpoints/last/pretrained_model) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 677.00 Tm
+(? Task prompt: grab the aruco and put it on the yellow basket) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 663.00 Tm
+(? Camera setup: wrist camera + overhead Intel RealSense) Tj
+ET
+BT
+/F2 13 Tf
+1 0 0 1 48.00 649.00 Tm
+(3. Commands Used) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 629.00 Tm
+(Bring up the robot in forward-controller mode) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 568.00 524.00 50.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 614.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 603.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 593.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 582.50 Tm
+(ros2 launch soa_bringup soa_bringup.launch.py controller:=forward cameras:=true) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 566.00 Tm
+(Start the controller switch service) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 505.00 524.00 50.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 551.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 540.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 530.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 519.50 Tm
+(ros2 run soa_functions controller_switcher) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 503.00 Tm
+(Start Rosetta with the ACT policy) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 400.00 524.00 92.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 488.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 477.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 467.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 456.50 Tm
+(ros2 launch rosetta rosetta_client_launch.py \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 446.00 Tm
+(  contract_path:=/home/ubuntu/techin517/ros2_ws/src/soa_ros2/soa_bringup/rosetta_contracts/s) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 435.50 Tm
+(oa_act_contract.yaml \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 425.00 Tm
+(  pretrained_name_or_path:=/home/ubuntu/techin517/act_so101_2cam_v3-20260416T004131Z-3-) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 414.50 Tm
+(002/act_so101_2cam_v3/checkpoints/last/pretrained_model) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 398.00 Tm
+(Run the policy) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 316.00 524.00 71.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 383.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 372.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 362.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 351.50 Tm
+(ros2 action send_goal /run_policy \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 341.00 Tm
+(  rosetta_interfaces/action/RunPolicy \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 330.50 Tm
+(  "{prompt: 'grab the aruco and put it on the yellow basket'}") Tj
+ET
+BT
+/F2 13 Tf
+1 0 0 1 48.00 314.00 Tm
+(4. Controller Switching Commands) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 294.00 Tm
+(List controllers) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 233.00 524.00 50.00 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 279.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 268.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 258.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 247.50 Tm
+(ros2 control list_controllers --controller-manager /follower/controller_manager) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 231.00 Tm
+(Switch from forward controllers to joint trajectory controllers) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 138.50 524.00 81.50 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 216.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 205.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 195.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 184.50 Tm
+(ros2 control switch_controllers \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 174.00 Tm
+(  --controller-manager /follower/controller_manager \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 163.50 Tm
+(  --deactivate arm_fwd_controller gripper_fwd_controller \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 153.00 Tm
+(  --activate arm_controller gripper_controller) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 136.50 Tm
+(Switch back from joint trajectory controllers to forward controllers) Tj
+ET
+BT
+/F1 9 Tf
+1 0 0 1 296.00 24 Tm
+(Page 3) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 2339 >>
+stream
+q
+0.95 0.95 0.95 rg
+44.00 660.50 524.00 81.50 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 738.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 727.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 717.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 706.50 Tm
+(ros2 control switch_controllers \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 696.00 Tm
+(  --controller-manager /follower/controller_manager \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 685.50 Tm
+(  --deactivate arm_controller gripper_controller \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 675.00 Tm
+(  --activate arm_fwd_controller gripper_fwd_controller) Tj
+ET
+BT
+/F2 11 Tf
+1 0 0 1 48.00 658.50 Tm
+(Switch controllers using the Lab 2 service) Tj
+ET
+q
+0.95 0.95 0.95 rg
+44.00 503.00 524.00 144.50 re f
+Q
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 643.50 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 633.00 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 622.50 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 612.00 Tm
+(ros2 service call /controller_switcher/switch_controller \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 601.50 Tm
+(  soa_interfaces/srv/SwitchController \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 591.00 Tm
+(  "{controller_type: forward}") Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 580.50 Tm
+( ) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 570.00 Tm
+(cd /home/ubuntu/techin517) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 559.50 Tm
+(source /opt/ros/humble/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 549.00 Tm
+(source /home/ubuntu/techin517/ros2_ws/install/setup.bash) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 538.50 Tm
+(ros2 service call /controller_switcher/switch_controller \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 528.00 Tm
+(  soa_interfaces/srv/SwitchController \\) Tj
+ET
+BT
+/F3 8.5 Tf
+1 0 0 1 48.00 517.50 Tm
+(  "{controller_type: jtc}") Tj
+ET
+BT
+/F2 13 Tf
+1 0 0 1 48.00 501.00 Tm
+(5. Video Link) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 481.00 Tm
+(https://drive.google.com/file/d/1OsM2ZlLQ8uVritTBjHpV-IHZaXtttfN4/view?usp=sharing) Tj
+ET
+BT
+/F2 13 Tf
+1 0 0 1 48.00 467.00 Tm
+(6. Reflection Paragraph) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 48.00 447.00 Tm
+(To be written by student without AI, per assignment instructions.) Tj
+ET
+BT
+/F1 9 Tf
+1 0 0 1 296.00 24 Tm
+(Page 4) Tj
+ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000000347 00000 n 
+0000000493 00000 n 
+0000000912 00000 n 
+0000001058 00000 n 
+0000006038 00000 n 
+0000006185 00000 n 
+0000011015 00000 n 
+0000011163 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+13555
+%%EOF

@@ -1,0 +1,56 @@
+{\rtf1\ansi\deff0
+{\fonttbl
+{\f0 Arial;}
+{\f1 Courier New;}
+}
+\paperw12240\paperh15840\margl1440\margr1440\margt1440\margb1440
+\fs24
+\b Lab 3 Report: MoveIt Forward Kinematics\b0\par
+\par
+Name: [Your Name]\par
+Date: [Due Date]\par
+\par
+\b 1. save_joint_states Service Code\b0\par
+File: ros2_ws/src/soa_ros2/soa_functions/soa_functions/save_joint_states.py\par
+Include the full contents of this file in the final submission if your instructor wants code inside the report. Otherwise, submit the file separately with the report.\par
+\par
+\b 2. Official ROS 2 Humble JointState Documentation\b0\par
+https://docs.ros.org/en/ros2_packages/humble/api/sensor_msgs/msg/JointState.html\par
+\par
+\b 3. Joint States CSV Contents\b0\par
+The CSV used for replay is shown below.\par
+\par
+{\f1\fs20
+shoulder_pan,shoulder_lift,elbow_flex,wrist_flex,wrist_roll,gripper\line
+0.28225246497095796,0.03834951969714103,0.4970097752749477,1.3054176504906807,0.1119805975156518,1.064582666792635\line
+0.25310683000113077,0.35588354278946877,0.4740000634566631,1.038504993398579,0.15033011721279282,1.0630486860047492\line
+0.25770877236478773,0.42184471666855133,0.3712233506683252,0.9648739155800683,0.1564660403643354,-0.04141748127291231\line
+0.2945243112740431,0.019941750242513337,0.36968936988043954,0.9633399347921826,0.1564660403643354,-0.04141748127291231\line
+-0.3328738309711841,0.0260776733940559,0.36968936988043954,0.9633399347921826,0.1564660403643354,-0.04141748127291231\line
+-0.3052621767892426,0.0260776733940559,0.4172427743048944,0.9817477042468103,0.1564660403643354,1.141281706186917\par
+}
+\fs24\f0
+\par
+\b 4. move_to_joint_states_server Code\b0\par
+File: ros2_ws/src/soa_ros2/soa_functions/soa_functions/move_to_joint_states_server.py\par
+Include the full contents of this file in the final submission if your instructor wants code inside the report. Otherwise, submit the file separately with the report.\par
+\par
+\b 5. go_to_joint_states App Code\b0\par
+File: ros2_ws/src/soa_ros2/soa_apps/soa_apps/go_to_joint_states.py\par
+Include the full contents of this file in the final submission if your instructor wants code inside the report. Otherwise, submit the file separately with the report.\par
+\par
+\b 6. Video Link\b0\par
+https://drive.google.com/file/d/1yqEjMq4NHhN9RF0kOkIMBQMhMtr_qCAA/view?usp=sharing\par
+\par
+\b 7. Reflection\b0\par
+Forward kinematics is well suited for applications where the robot's joint values are known and we need to calculate the position and orientation of the end effector, such as robot simulation, motion playback, industrial automation, and simple pick-and-place tasks. One strength of controlling the joints directly is that it is straightforward, efficient, and easy to implement because each motor can be commanded independently. It also gives precise control over the robot's internal motion. However, the weakness is that joint control does not directly guarantee that the end effector will move to the desired position in task space, so it can be less intuitive for complex tasks. It also becomes harder to use when the robot must interact accurately with objects or environments, because small joint errors can lead to larger errors at the end effector.\par
+\par
+\b Submission Checklist\b0\par
+- save_joint_states.py\par
+- official JointState documentation link\par
+- CSV contents\par
+- move_to_joint_states_server.py\par
+- go_to_joint_states.py\par
+- video link\par
+- reflection paragraph\par
+}

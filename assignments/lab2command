@@ -1,0 +1,44 @@
+Terminal 1
+
+cd /home/ubuntu/techin517
+source /opt/ros/humble/setup.bash
+source /home/ubuntu/techin517/ros2_ws/install/setup.bash
+ros2 launch soa_bringup soa_bringup.launch.py controller:=forward cameras:=true
+
+
+
+启动后先确认这次日志里应该是：
+
+Connecting to port: /dev/ttyACM1
+不是 /dev/ttyACM0。
+
+Terminal 2
+
+cd /home/ubuntu/techin517
+source /opt/ros/humble/setup.bash
+source /home/ubuntu/techin517/ros2_ws/install/setup.bash
+ros2 run soa_functions controller_switcher
+
+
+
+
+Terminal 3
+
+cd /home/ubuntu/techin517
+source /opt/ros/humble/setup.bash
+source /home/ubuntu/techin517/ros2_ws/install/setup.bash
+ros2 launch rosetta rosetta_client_launch.py \
+  contract_path:=/home/ubuntu/techin517/ros2_ws/src/soa_ros2/soa_bringup/rosetta_contracts/soa_act_contract.yaml \
+  pretrained_name_or_path:=/home/ubuntu/techin517/act_so101_2cam_v3-20260416T004131Z-3-002/act_so101_2cam_v3/checkpoints/last/pretrained_model
+
+
+
+
+Terminal 4
+
+cd /home/ubuntu/techin517
+source /opt/ros/humble/setup.bash
+source /home/ubuntu/techin517/ros2_ws/install/setup.bash
+ros2 action send_goal /run_policy \
+  rosetta_interfaces/action/RunPolicy \
+  "{prompt: 'grab the aruco and put it on the yellow basket'}"
