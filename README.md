@@ -2,6 +2,19 @@
 
 This is the project README for our TECHIN 517 course project. Our goal is to build a general object manipulation pipeline for the bi-manual SO101 robot arms. The system first uses perception to identify the target object, then uses inverse kinematics (IK) to move the arm near the object, and finally runs segmented VLA policies to complete the manipulation task.
 
+
+
+https://github.com/user-attachments/assets/9e76d871-369a-476a-ad68-a44385a65b1b
+
+
+
+https://github.com/user-attachments/assets/c3de2f02-e59c-4f3f-a1ee-6fb77bff705e
+
+
+
+https://www.youtube.com/watch?v=2hf9C5P34AI&t=22s
+
+
 The project combines the three types of methods required by the course:
 
 - **Computer Vision / Perception**: detect the target object from camera images and estimate its location in the workspace.
