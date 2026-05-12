@@ -3,6 +3,9 @@
 
 This internship project focused on developing an end-to-end Vision-Language-Action (VLA) bimanual robot manipulation system for household tabletop tidying and cleaning. The target scenarios included tabletop organization, trash pickup, object relocation, towel folding, pouring, and surface wiping.
 
+<img width="1280" height="706" alt="aa5453a415e12235ca51d1d3fd493ea6" src="https://github.com/user-attachments/assets/a4f0186e-09c3-4d1d-8805-72584e155ac6" />
+
+
 <img width="6700" height="4144" alt="微信图片_20260508221912_145_1243" src="https://github.com/user-attachments/assets/e5fd0294-a6f3-4c2d-b0da-86a804c9e8e2" />
 
 
